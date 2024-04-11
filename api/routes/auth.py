@@ -7,7 +7,7 @@ router = Blueprint("auth", __name__)
 def login():
     return {"msg": "login"}
 
-@router.get("/callback", __name__)
+@router.get("/callback")
 def callback():
     return {"message": "callback"}
 
