@@ -2,10 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/api')
 def home():
-    return 'Hello, World!'
+    return {"message": "Welcome to SpotiDance API"}
 
-@app.route('/about')
-def about():
-    return 'About'
