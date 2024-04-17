@@ -10,5 +10,6 @@ class Settings(BaseSettings):
     CLIENT_SECRET:str=os.environ.get("CLIENT_SECRET")
     SPOTIFY_AUTH_URL:str = "https://accounts.spotify.com/authorize"
     STATE_VALUE:str =os.environ.get("STATE_VALUE")
+    BACKEND_URL:str=os.environ.get("BACKEND_URL")
         
 settings = Settings()
